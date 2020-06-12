@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>login</title>
+  <link rel="stylesheet" href="css/partecita.css"> <!-- Aquí hay que cambiar la referencia -->
+
+
+</head>
+
+<body>
+
+  <h2>Formulario de Registro</h2>
+
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Ingresa</button>
+
+  <div id="id01" class="modal">
+
+    <form class="modal-content animate" action="incidente.html" method="post">
+
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+          title="Close Modal">&times;</span>
+        <img src="img/avatar.png" alt="Avatar" class="avatar">
+      </div>
+
+        <div class="container">
+          <label for="user"><b>Nombre de Usuario</b></label>
+          <input type="text" placeholder="Ingresa tu usuario" name="user" required>
+    
+          <label for="pass"><b>Password</b></label>
+          <input type="password" placeholder="Ingresa tu Password" name="pass" required>
+            
+          <button type="submit" id="ingreso"> ingresa</button>
+
+        </div>
+
+      <div class="container">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+          class="cancelbtn">Cancel</button>
+        <span class="psw"><a href="registro.html">Puedes registrate aquí</a></span>
+      </div>
+
+    </form>
+  </div>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
