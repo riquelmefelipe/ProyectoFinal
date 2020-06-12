@@ -1,7 +1,210 @@
-.redes_sociales{
-
+body{
+    width: 100%;
 }
-.master_footer{
+.contenido-body{
+    border: 1px solid black;
     display: flex;
-
+    /*background-color: cornflowerblue;*/
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    /*padding: 10px;*/
+    
+    width: 100%;
 }
+#cuerpo{
+    margin: 10px auto;
+    border: 1px solid black;
+    width: 90%;
+}
+/***************** Estilos Menú****************************/
+/**********************************************************/
+header{
+    background: #0d1321;
+    color: #ebebd3;
+    padding-top: 0;
+    position: relative;
+}
+
+header::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.logo{
+    font-size: 1rem;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.logo_main{
+    height: 200px;
+    padding: 20px;
+    background: #012ade;
+    color: white;
+    cursor: default;
+}
+.site-nav{
+    top:100%;
+    right:0;
+    position: absolute;
+    background: #464655;
+    clip-path: circle(0px at top right);
+    transition: clip-path ease-in-out 700ms;
+}
+.site-nav-open{
+    clip-path: circle(150% at top right);
+}
+.site-nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.site-nav li{
+    border-bottom: 1px solid #575766;
+}
+.site-nav li:last-child{
+    border-bottom: none;
+}
+.site-nav a{
+    color: #ebedb3;
+    display: block;
+    padding: 2em 6em;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 100%;
+}
+.site-nav a:hover,
+.site-nav a:focus{
+    background: #797062;
+    color: #464655;
+}
+.site-nav--icon{
+    display: inline-block;
+    font-size: 1.5em;
+    margin-right: 1em;
+    width: 1.1em;
+    text-align: right;
+    color: rgba(255, 255, 255, .4);
+}
+.menu-toggle{
+   
+    padding: 1em;
+    position: absolute;
+    top: .5em;
+    right: .5em;   
+}
+.menu-open .hamburger{
+    transform: rotate(45deg);
+}
+.menu-open .hamburger::before{
+    opacity: 0;
+}
+.menu-open .hamburger::after{
+    transform: translateY(-3px) rotate(-90deg);
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after{
+    content: '';
+    display: block;
+    background: #ebebd3;
+    height: 3px;
+    width: 1.75em;
+    border-radius: 3px;
+    transition: all ease-in-out 500ms;
+}
+.hamburger::before{
+    transform: translateY(-6px);
+}
+.hamburger::after{
+    transform: translateY(3px);
+}
+@media screen and (max-width:936px){
+	.site-nav ul{
+		padding: 0;
+	}
+	.site-nav ul li{
+		margin-right: -3px;
+		/*display: inline-block;*/
+		text-align: center;
+		width: 50%;
+	}
+	.site-nav li a{
+		display: list-item;
+    }
+    .logo_main {
+        padding: 20px;
+        background: #0d1321;
+        color: white;
+        cursor: pointer;
+        height: auto;
+    }
+}
+@media (min-width:700px){
+  .menu-toggle{
+      display: none;
+  } 
+  .site-nav{
+      height: auto;
+      position: relative;
+      background: transparent;
+      float: right;
+     /* margin-right: 10px;*/
+      clip-path: initial;
+  } 
+  .site-nav li{
+      display: inline-block;
+      border: none;
+  }
+  .site-nav a{
+      padding: 1em;
+      width: 100%;
+      /*margin-left: 1em;*/
+  }
+  .site-nav--icon{
+      display: none;
+  }
+  .site-nav a:hover,
+  .site-nav a:focus{
+      background: transparent;
+  }
+  
+}
+/***************** Fin Estilos Menú****************************/
+/**************************************************************/
+
+.secundarios{
+    display: flex;
+}
+
+/***************Estilos Footer**********************************/
+/**************************************************************/
+.master_footer{
+    background-color: #0d1321;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    width: 100%;
+    
+}
+@media (max-width:699px){
+    .enlaces_contenido,
+    .redes_sociales{
+        display: none;
+    }
+}
+/**********************Fin Estilos Footer**************************/
+/******************************************************************/
+
+/*
+.enlaces_contenido{
+    
+    width: 50%;
+}
+.redes_sociales{
+    
+    width: 50%;
+
+}*/
