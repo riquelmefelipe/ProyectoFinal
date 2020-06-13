@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <script src="js/jquery.flexslider.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Safe Video</title>
 </head>
@@ -31,57 +33,32 @@
     </header>
     <div class="contenido-body">
         <section id="cuerpo">
-            <article class="principal">
-                <div class="header-articulo">
-                    <img src="img/presentación.jpg" alt="">
-                </div>
-                <div class="descripcion">
-                    <h3>Reseña del Grupo</h3>
-                    <p> 4 talentos digitales se juntaron en este grupo de trabajo. La experiencia, las ideas, y lo técnico
-                        se
-                        reúnen para generar potenciales ideas que puedan generar un negocio factible y realizable en el
-                        mercado
-                        chileno.
-                        Gustavo Rodríguez, Pedro Rodríguez, Víctor Valladares y Felipe Riquelme se unen para dar vida tres
-                        potenciales proyectos que nacen de las ideas , vivencias e intereses de este diverso pero compacto
-                        equipo de trabajo. A continuación detallamos las tres principales ideas de trabajo que nacieron del
-                        esfuerzo conjunto:
-                    </p>
-                </div>
-            </article>
-            <div class="secundarios">
-                <article class="articulo">
-    
-                    <img src="img/1.jpg" alt="">
-                    <h3>Technical token</h3>
-                    <p> Aplicación que permite encontrar fallas de reparaciones y las conecta con otras empresas de insumo
-                    </p>
-    
-                    <a href="technical_token.html">
-                        <div class="btn-1">Mostrar</div>
-                    </a>
-                </article>
-                <article class="articulo">
-    
-                    <img src="img/2.jpg" alt="">
-                    <h3>Zervis</h3>
-                    <p> Una app que conecta oficios y clientes mediante una app con geolocalización , con calificación de
-                        usuarios
-                    </p>
-                    <a href="zervis.html">
-                        <div class="btn-2">Mostrar</div>
-                    </a>
-                </article>
-                <article class="articulo">
-    
-                    <img src="img/3.jpg" alt="">
-                    <h3>Video Safe</h3>
-                    <p> app que permite levantar accidentes o lugares con posibles accidentes en lugares de trabajo.
-                    </p>
-                    <a href="video_safe.html">
-                        <div class="btn-3">Mostrar</div>
-                    </a>
-                </article>
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <img src="img/vigilante.jpg" alt="">
+                        <section class="flex-caption">
+                            <p>Safe Video</p>
+                        </section>
+                    </li>
+                    <li>
+                        <img src="img/reporta.jpg" alt="">
+                        <section class="flex-caption">
+                            <p>Safe Video</p>
+                        </section>
+                    </li>
+                    <li>
+                        <img src="img/barrera.jpg" alt="">
+                        <section class="flex-caption">
+                            <p>Safe Video</p>
+                        </section>
+                    </li>
+                </ul>
+            </div>
+            <div class="descripcion">
+                <h3>Bienvenido a Video Safe</h3>
+                <p> La primera aplicación que promueve la seguridad laboral de colaboradores mediante un 
+                    sistema integrado de seguridad.</p>
             </div>
         </section>
     
@@ -110,16 +87,4 @@
     <script src="js/app.js"></script>
 </body>
 </html>
-© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
->>>>>>> 03cd1fd9d6ad3e6d6490756a205f93bb4f799424
+
