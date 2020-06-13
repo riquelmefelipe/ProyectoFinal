@@ -4,12 +4,9 @@ body{
 .contenido-body{
     border: 1px solid black;
     display: flex;
-    /*background-color: cornflowerblue;*/
     display: flex;
     flex-direction: column;
     align-content: center;
-    /*padding: 10px;*/
-    
     width: 100%;
 }
 #cuerpo{
@@ -173,7 +170,17 @@ header::after{
 }
 /***************** Fin Estilos Menú****************************/
 /**************************************************************/
-
+/*********************Estilos Acordeón***********************/
+#cuerpo-acordeon{
+    align-content: flex-end;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#descripcion{
+    width: 90%;
+    margin: 20px auto;
+}
 .secundarios{
     display: flex;
 }

@@ -1,12 +1,3 @@
-var elementTop = $('.site-nav').offset().top;
-
-$(window).scroll(function(){
-    if( $(window).scrollTop() >= elementTop){
-        $('body').addClass('nav_fixed');
-    }else{
-        $('body').removeClass('nav_fixed');
-    }
-});
 function cambiarClase(){
     let siteNav = document.getElementById('site-nav');
         siteNav.classList.toggle('site-nav-open');
@@ -14,3 +5,7 @@ function cambiarClase(){
         menuOpen.classList.toggle('menu-open');    
         
 }
+$( function() {
+    $( "#descripcion" ).accordion();
+    
+    });
