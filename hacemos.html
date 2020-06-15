@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+​
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylefinal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <title>Qué Hacemos</title>
+</head>
+​
+<body>
+    <header>
+        <div class="logo logo_main">
+            <img id="imagen_logo" src="img/logo.png" alt="">
+        </div>
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li><a href="index.html"><i class="fa fa-home site-nav--icon"></i>Home</a></li>
+                <li><a href="quienes.html"><i class="fa fa-address-card site-nav--icon"></i>Quienes Somos</a></li>
+                <li><a href="hacemos.html"><i class="fa fa-pencil-alt site-nav--icon"></i>Que Hacemos</a></li>
+                <li><a href="como.html"><i class="fa fa-info site-nav--icon"></i>Como Funciona</a></li>
+                <li><a href="beneficios.html"><i class="fa fa-dollar-sign site-nav--icon"></i>Beneficios</a></li>
+                <li><a href="clientes.html"><i class="fa fa-tools site-nav--icon"></i>Con Quien Trabajamos</a></li>
+                <li><a onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-dollar-sign site-nav--icon"></i>login</a></li>
+                <li><a href="formulario.html"><i class="fa fa-tools site-nav--icon"></i>registrate</a></li>
+            </ul>
+        </nav>
+        <div id="menu-toggle" class="menu-toggle" onclick="cambiarClase()">
+            <div class="hamburger"></div>
+        </div>
+    </header>
+    <section id="cuerpo">
+        <article class="principal">
+            <div class="header-articulo">
+                <img src="img/presentación.jpg" alt="">
+            </div>
+            <div class= "descripcion">
+                <h3>Video SAFE facilita la gestión de seguridad de los trabajadores </h3>
+                <p_hac> Por medio de la app evitamos accidentes en el lugar de tu trabajo, identificando lugares que pueden inducir accidentes laborales:
+                </p_hac>
+            </div>
+        </article>
+        <div class="secundarios">
+            <article class="articulo">
+             
+​
+                    <h3>Accidentes Laborales</h3>
+                    <p_hac> Accidentes al interior de tu trabajo: caídas, pisos resbaladizos, sitios inseguros, sobrecargas eléctricas entre otros
+                    </p_hac>
+                
+                <div class="btn-1">Lo quiero</div>
+            </article>
+​
+            <article class="articulo">
+                
+​
+                <h3>Accidentes de trayectos</h3>
+                <p_hac> Ya sea vayas en bicicleta, micro o metro, resguarda tu trayecto via el geolocalización activada
+                </p_hac>
+                <div class="btn-2">Lo quiero</div>
+            </article>
+            
+            
+            
+            <article class="articulo">
+            
+                <h3>Enfermedades profesionales</h3>
+                <p_hac> Provocadas por la naturaleza de tu trabajo que pueden causar incapacidad o muerte  
+                </p_hac>
+                <div class="btn-3">Lo quiero</div>
+          
+            </article>
+​
+            <article class="articulo">
+            
+                <h3>Gestión de Prestaciones </h3>
+                <p_hac> Gestión Prestaciones médicas y seguros, documentación  revisión en tiempo real de estados y línea directa con los encargados  
+                </p_hac>
+                <div class="btn-4">Lo Quiero</div>
+          
+            </article>
+        </div>
+    </section>
+    <div id="id01" class="modal">
+​
+        <form class="modal-content animate" action="incidente.html" method="post">
+    
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+              title="Close Modal">&times;</span>
+            <img src="img/avatar.png" alt="Avatar" class="avatar">
+          </div>
+    
+            <div class="container">
+              <label for="user"><b>Nombre de Usuario</b></label>
+              <input type="text" placeholder="Ingresa tu usuario" name="user" required>
+        
+              <label for="pass"><b>Password</b></label>
+              <input type="password" placeholder="Ingresa tu Password" name="pass" required>
+                
+              <button type="submit" id="ingreso"> ingresa</button>
+    
+            </div>
+    
+          <div class="container">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+              class="cancelbtn">Cancel</button>
+            <span class="psw"><a href="formulario.html">Puedes registrate aquí</a></span>
+          </div>
+    
+        </form>
+      </div>
+​
+​
+​
+​
+    <footer class="master_footer">
+​
+            <ul class="enlaces_contenido">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quienes.html">Quienes Somos</a></li>
+                <li><a href="hacemos.html">Que Hacemos</a></li>
+                <li><a href="como.html">Como Funciona</a></li>
+                <li><a href="beneficios.html">Beneficios</a></li>
+                <li><a href="clientes.html">Con Quien Trabajamos</a></li>
+                <li><a href="login.html">login</a></li>
+                <li><a href="formulario.html">registrate</a></li>
+            </ul>
+            <p>Derechos Reservados | Video SAFE &copy</p>
+            <div class="redes_sociales">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+    </footer>
+   
+</body>
+​
+</html>

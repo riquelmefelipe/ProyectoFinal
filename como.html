@@ -2,38 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>¿ Cómo funciona?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="js/jquery.steps.js"></script>
-    <link rel="stylesheet" href="css/examples.css"> <!-- Aquí hay que cambiar la referencia -->
-
+    <link rel="stylesheet" href="css/stylefinal.css">
+   <link rel="stylesheet" href="css/examples.css">   
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    
+   <title>¿ Cómo funciona?</title>
 </head>
 <body>
+    <header>
+        <div class="logo logo_main">
+            <img id="imagen_logo" src="img/logo.png" alt="">
+        </div>
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li><a href="index.html"><i class="fa fa-home site-nav--icon"></i>Home</a></li>
+                <li><a href="quienes.html"><i class="fa fa-address-card site-nav--icon"></i>Quienes Somos</a></li>
+                <li><a href="hacemos.html"><i class="fa fa-pencil-alt site-nav--icon"></i>Que Hacemos</a></li>
+                <li><a href="como.html"><i class="fa fa-info site-nav--icon"></i>Como Funciona</a></li>
+                <li><a href="beneficios.html"><i class="fa fa-dollar-sign site-nav--icon"></i>Beneficios</a></li>
+                <li><a href="clientes.html"><i class="fa fa-tools site-nav--icon"></i>Con Quien Trabajamos</a></li>
+                <li><a onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-dollar-sign site-nav--icon"></i>login</a></li>
+                <li><a href="formulario.html"><i class="fa fa-tools site-nav--icon"></i>registrate</a></li>
+            </ul>
+        </nav>
+        <div id="menu-toggle" class="menu-toggle" onclick="cambiarClase()">
+            <div class="hamburger"></div>
+        </div>
+    </header>
 
+<div id="body_como">
+    
     <h1>¿Cómo funciona?</h1>
 
     <div id="example-vertical">
-        <h3>1.Identifica</h3>
+        <h3>Identifica</h3>
         <section>
             <p> Identifica un riesgo real o potencial en tu trabajo o camino a este</p>
         </section>
-        <h3>3.usa tu móvil</h3>
+        <h3>Usa tu móvil</h3>
         <section>
             <p>Saca una foto rápida</p>
         </section>
-        <h3>4.Cárgala a la aplicación</h3>
+        <h3>Cárgala a la aplicación</h3>
         <section>
-            <p>automáticamente detectaremos tu ubicación y registraremos la hora del suceso .</p>
+            <p>Automáticamente detectaremos tu ubicación y registraremos la hora del suceso .</p>
         </section>
-        <h3>4.Cárgala a la App</h3>
+        <h3>Cárgala a la App</h3>
         <section>
             <p>Quedará registrada en nuestros sistema. .</p>
         </section>
-        <h3>5.Agrega el detalle</h3>
+        <h3>Agrega el detalle</h3>
         <section>
-            <p>es un peligro, es una enfermedad laboral, requieres una gestión? un menú rápido de la categoría del </p>
+            <p> ¿Tienes una enfermedad laboral? ¿requieres una gestión? un menú rápido de la categoría te permite gestionarla</p>
         </section>
         <h3>Voilá</h3>
         <section>
@@ -41,7 +65,51 @@
         </section>
     </div>
 
+</div>
 
+<footer class="master_footer">
+    
+    <ul class="enlaces_contenido">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="quienes.html">Quienes Somos</a></li>
+        <li><a href="hacemos.html">Que Hacemos</a></li>
+        <li><a href="como.html">Como Funciona</a></li>
+        <li><a href="beneficios.html">Beneficios</a></li>
+        <li><a href="clientes.html">Con Quien Trabajamos</a></li>
+        <li><a href="login.html">login</a></li>
+        <li><a href="formulario.html">registrate</a></li>
+    </ul>
+    <p>Derechos Reservados | Video SAFE &copy</p>
+    <div class="redes_sociales">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+</footer>
+
+<script src="js/app.js"></script>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+</script>
+
+    <script>
+        $("#example-vertical").steps({
+        headerTag: "h3",
+        bodyTag: "section",
+        transitionEffect: "slideLeft",
+        stepsOrientation: "vertical"
+    });
+    </script>
 
 </body>
 </html>

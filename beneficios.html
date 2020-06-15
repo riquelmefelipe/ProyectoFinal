@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Beneficios</title>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+        <script src="js/jquery.steps.js"></script>
+        <link rel="stylesheet" href="css/stylefinal.css">
+        <link rel="stylesheet" href="css/examples.css">
+
+    </head>
+
+    <body>
+        <header>
+            <div class="logo logo_main">
+                <img id="imagen_logo" src="img/logo.png" alt="">
+            </div>
+            <nav id="site-nav" class="site-nav">
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-home site-nav--icon"></i>Home</a></li>
+                    <li><a href="quienes.html"><i class="fa fa-address-card site-nav--icon"></i>Quienes Somos</a></li>
+                    <li><a href="hacemos.html"><i class="fa fa-pencil-alt site-nav--icon"></i>Que Hacemos</a></li>
+                    <li><a href="como.html"><i class="fa fa-info site-nav--icon"></i>Como Funciona</a></li>
+                    <li><a href="beneficios.html"><i class="fa fa-dollar-sign site-nav--icon"></i>Beneficios</a></li>
+                    <li><a href="clientes.html"><i class="fa fa-tools site-nav--icon"></i>Con Quien Trabajamos</a></li>
+                    <li><a onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-dollar-sign site-nav--icon"></i>login</a></li>
+                    <li><a href="formulario.html"><i class="fa fa-tools site-nav--icon"></i>registrate</a></li>
+                </ul>
+            </nav>
+            <div id="menu-toggle" class="menu-toggle" onclick="cambiarClase()">
+                <div class="hamburger"></div>
+            </div>
+        </header>
+
+        <div id="example-tabs">
+            <h3>Beneficios para Trabajadores</h3>
+            <section>
+                <p>* Mantén la seguridad en tu espacio de trabajo.</p>
+                <p>* Obtén descuentos y beneficios exclusivos para usuarios</p>
+                <p>* Cobra seguros asociados y prestaciones médicas</p>
+                <p>* Registro completo de tu actividad en mutualidades.</p>
+            </section>
+
+            <h3>Beneficio Para Empresas</h3>
+            <section>
+                <p>* Mantiene la información actualizada en tiempo real de la accidentabilidad.</p>
+                <p>* Utiliza el Dashboard con información de tipo de accidente, área e impacto potencial .</p>
+                <p>* Registro completo de tu actividad en mutualidades.</p>
+                <p>* Toma decisiones sobre los siniestros que impactan en dinero y tiempo de tu empresa.</p>
+                <p>* Identifica colaboradores propensos a subir lesiones y edúcalos con nuestros cursos in-app.</p>
+                <p>* Identifica zonas conflictivas con nuestro mapa de calor de tu empresa.</p>
+            </section>
+        
+        </div>
+
+        <footer class="master_footer">
+    
+            <ul class="enlaces_contenido">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quienes.html">Quienes Somos</a></li>
+                <li><a href="hacemos.html">Que Hacemos</a></li>
+                <li><a href="como.html">Como Funciona</a></li>
+                <li><a href="beneficios.html">Beneficios</a></li>
+                <li><a href="clientes.html">Con Quien Trabajamos</a></li>
+                <li><a href="login.html">login</a></li>
+                <li><a href="formulario.html">registrate</a></li>
+            </ul>
+            <p>Derechos Reservados | Video SAFE &copy</p>
+                <div class="redes_sociales">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </footer>
+    
+        <script src="js/app.js"></script>
+        <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+        if (event.target == modal) {
+        modal.style.display = "none";
+        }
+        }
+        </script>
+
+        <script>
+            $("#example-tabs").steps({
+        headerTag: "h3",
+        bodyTag: "section",
+        transitionEffect: "slideLeft",
+        enableFinishButton: false,
+        enablePagination: false,
+        enableAllSteps: true,
+        titleTemplate: "#title#",
+        cssClass: "tabcontrol"
+         });
+        </script>
+
+    </body>
+</html>
